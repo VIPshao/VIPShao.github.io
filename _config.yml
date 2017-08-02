@@ -1,6 +1,6 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: hui.shao
+bio: A man who tries to change the world
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -54,8 +54,8 @@ email: myemail@gmail.com
 
 authors:
     johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+        name: hui.shao
+        bio: A man who tries to change the world
         external-image: false
         picture: assets/images/profile.jpg
         twitter: johndoe
