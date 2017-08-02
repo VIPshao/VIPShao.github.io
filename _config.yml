@@ -1,110 +1,94 @@
-# main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+# User Settings | Edit there as per required
 
-# twitter summary info
-description: A blog about technology and stuff related
+title: accent
+url: "http://ankitsultana.com"
+baseurl: "/accent"
 
-# if it's an external image, update below for true
-# better with square images
-external-image: false
-picture: assets/images/profile.jpg
+# This will show up at the top of index page
+site_heading: >
+    foo <span class="faded">'s blog</span>
 
-# If you want to include your resume, set to true
-# and specify source (external or local).
-resume: true
-resume-external: true
-resume-url: https://google.com/?q=my+resume
+email: your@email.com
+author: yourname
+# This description will show up in google search results
+# (for index page) etc.
+description: >
+    accent is, as Trump would put it, the best
 
-url: https://koppl.in/indigo
-# your url: http://USERNAME.github.io
+# This will what will show against &copy; in the footer
+copyright: accent
+# Toggle your short bio, which will displayed on your index page
+# Just toggle it and run jekyll again to see
+intro: false         # Tip: Remove the span from site_heading if intro is set to true
+# This will be displayed in your intro
+short_bio: >
+    Welcome! This is <span>accent</span>, a mobile friendly theme for Jekyll. The main feature of this
+    theme is that you can change the accent color. Refer the
+    <a class="underline different-highlight" href="http://ankitsultana.com/accent/documentation.html">
+        Documentation
+    </a>
+    to know how.
 
-permalink: /:title/
+permalink: /:title.html
 
-# To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+# Comments are powered by disqus
+comments: true
 
-# To enable piwik tracking, supply your url & site ID below
-# analytics-piwik-url: 'piwik.my-host.com'
-# analytics-piwik-id: 1
+# keep about_stub roughly 12 words long for best results
+# This will show up at the bottom of each post
+# Note that about_footer should be true if you want
+# to see author information at the bottom of each post
+about_stub: >
+    Keep this sentence less than 13 words or it won't look good.
 
-# if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+about_footer: true
 
-# if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-# google: mygoogle
-# instagram: myinstagram
-# pinterest: mypinterest
-# linkedin: mylinkedin
-# youtube: myyoutube
-# spotify: myspotify
-github: mygithub
-# lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-medium: medium
-# vimeo: myvimeo
-# lanyrd: mylanyrd
-email: myemail@gmail.com
+twitter_username: AnkitSultana
+github_username: yourgithub
+facebook_id: yourusername
 
-authors:
-    johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
-        external-image: false
-        picture: assets/images/profile.jpg
-        twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
+favicon: true
+favicon_location: "images/favicon.ico"
 
-# do you want a larger site? change the option below
-# options: [normal, large] | default: normal
-# normal = 560px / large = 810px
-width: normal
+profile_picture: images/temp.png
+paginate: 5
+paginate_path: "/page/:num"
+tracking_id: UA-69243698-7 # GA Tracking ID
 
-# if you don't need pagination, comment the *paginate* configs below
-# paginate: 5
-# paginate_path: "blog/:num/"
+# Social Stuff | open graph and twitter cards
+og_image: "images/accent.png" # This will show in facebook thumbnails
+twitter_image: "http://ankitsultana.com/images/accent.png?1234" # This will show in twitter cards
 
-# if you don't need projects, comment the *projects* configs below
-projects: true
+####################################
+####################################
+####################################
+### Build Settings | Don't Touch ###
+####################################
+####################################
+####################################
 
-# if you don't need "about" or "blog", comment them out below
-about: true
-blog: true
-
-# do you want to show the "read time" of the posts?
-read-time: true
-
-# do you want to show the "tags" inside the posts?
-show-tags: true
-
-# related posts inside a post?
-related: true
-
-# Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
-
-# show author block at the end of a post ?
-show-author: true
-
-# do you want some animations?
-animation: true
+markdown: kramdown
 
 gems:
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
+    - jekyll-paginate
 
-jekyll-mentions:
-    base_url: https://github.com
+sass:
+    style: compressed
+    sass_dir: _sass
+
+# Scopes
+defaults:
+    -
+        scope:
+            path:   ""
+            type:   "pages"
+        values:
+            layout: "page"
+    -
+        scope:
+            path:   ""
+            type:   "posts"
+        values:
+            layout: "post"
+
+exclude: [vendor] # For travis ci
