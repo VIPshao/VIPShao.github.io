@@ -1,6 +1,6 @@
 ---
-title: About
 layout: page
+title: 关于
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
