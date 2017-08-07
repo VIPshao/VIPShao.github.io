@@ -1,6 +1,6 @@
 # main text of home
 name:  V.hui
-bio: Try to change the world
+bio: Try to change myself -Java Coder
 
 # twitter summary info
 description: At first, I thought I knew everything, but then I found out that the truth is I don't know anything.
@@ -8,7 +8,7 @@ description: At first, I thought I knew everything, but then I found out that th
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: assets/images/sign.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -55,9 +55,9 @@ email: v.shaohui@qq.com
 authors:
     V.hui:
         name: Shao Hui
-        bio: Try to change the world
+        bio: Try to change myself -Java Coder
         external-image: false
-        picture: assets/images/profile.jpg
+        picture: assets/images/sign.jpg
         twitter: johndoe
     
 # do you want a larger site? change the option below
